@@ -1,0 +1,8 @@
+Raw_Data/
+Mapping_crashes-checkpoint.ipynb
+Data_exploration/Mapping_and_visualizations/.mapbox_token
+Data_exploration/Mapping_and_visualizations/Mapping_crashes.ipynb
+Data_exploration/Mapping_and_visualizations/.ipynb_checkpoints/Mapping_crashes-checkpoint.ipynb
+Crashes.csv
+People.csv
+Vehicle.csv
