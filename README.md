@@ -29,11 +29,11 @@ During initial overview of data, it was easy to determine that I had more data t
 
 ## Analysis
 <details><summary></summary>
-An initial [overview](.\Data_exploration\Data_import_overview.ipynb) provided an excellent [profile report](.\Data_exploration\Profile_Reports\crash_data.html) of the data. From there it was easy to identify the columns that needed work before exploration could begin. The notebooks within the Data_exploration folder show the cleaning process and an [attempt at filling some missing data](.\Data_exploration\Attempt_at_filling_missing_lane_info.ipynb). Due to time constraints and a poor initial model, this idea was dismissed. However, I would like to return to this attempt and try semi-supervised learning to determine the missing values. 
+An initial [overview](./Data_exploration/Data_import_overview.ipynb) provided an excellent [profile report](./Data_exploration/Profile_Reports/crash_data.html) of the data. From there it was easy to identify the columns that needed work before exploration could begin. The notebooks within the Data_exploration folder show the cleaning process and an [attempt at filling some missing data](./Data_exploration/Attempt_at_filling_missing_lane_info.ipynb). Due to time constraints and a poor initial model, this idea was dismissed. However, I would like to return to this attempt and try semi-supervised learning to determine the missing values. 
 
 ____________________________________
 
-After cleaning and feature engineering, I began to investigate the data in the Mapping_and_visualizations folder. The created maps are viewable as html files to reduce the size and improve the functionality of the [notebook](.\Data_exploration\Mapping_and_visualizations\Mapping_crashes.ipynb). Visualization and further investigation was conducted in the [EDA notebook](.\Data_exploration\Mapping_and_visualizations\EDA.ipynb). This investigation did identify the frequency of accidents seemining to align with a typical work day. 
+After cleaning and feature engineering, I began to investigate the data in the Mapping_and_visualizations folder. The created maps are viewable as html files to reduce the size and improve the functionality of the [notebook](./Data_exploration/Mapping_and_visualizations\Mapping_crashes.ipynb). Visualization and further investigation was conducted in the [EDA notebook](./Data_exploration/Mapping_and_visualizations/EDA.ipynb). This investigation did identify the frequency of accidents seemining to align with a typical work day. 
 
 ![crash time of day](./images/Crash_hour.png)
 This also showed an interesting trend of more accidents occuring in areas where traffic control was not present. When looking at injuries, however, we see that more occurred in areas where traffic control WAS present. 
@@ -46,7 +46,7 @@ This was an interesting disparity that I feel warrants further investigation giv
 
 ______________________________
 ### Classification
-After investigating the data, I began modeling and working towards classifying the primary causes of accidents. This was a multi-class problem. I attempt to simplify this issue in the [Creating_Crash_Master](.\Data_exploration\Creating_Crash_Master.ipynb) notebook by grouping similar causes into larger categories for classification. 
+After investigating the data, I began modeling and working towards classifying the primary causes of accidents. This was a multi-class problem. I attempt to simplify this issue in the [Creating_Crash_Master](./Data_exploration/Creating_Crash_Master.ipynb) notebook by grouping similar causes into larger categories for classification. 
 
 ![classification bins](./images/Annotation2020-07-20_085925.png)
 
