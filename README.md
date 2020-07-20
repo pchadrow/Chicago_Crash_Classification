@@ -35,9 +35,9 @@ ____________________________________
 
 After cleaning and feature engineering, I began to investigate the data in the Mapping_and_visualizations folder. The created maps are viewable as html files to reduce the size and improve the functionality of the [notebook](.\Data_exploration\Mapping_and_visualizations\Mapping_crashes.ipynb). Visualization and further investigation was conducted in the [EDA notebook](.\Data_exploration\Mapping_and_visualizations\EDA.ipynb). This investigation did identify the frequency of accidents seemining to align with a typical work day. 
 
-![crash time of day](.\images\Crash_hour.png)
+![crash time of day](./images/Crash_hour.png)
 This also showed an interesting trend of more accidents occuring in areas where traffic control was not present. When looking at injuries, however, we see that more occurred in areas where traffic control WAS present. 
-![injury counts in thousands](.\images\injury_thosands.png)
+![injury counts in thousands](./images/injury_thosands.png)
 
 This was an interesting disparity that I feel warrants further investigation given more time.
 * What types of traffic control have more injuries associated with them?
@@ -48,17 +48,17 @@ ______________________________
 ### Classification
 After investigating the data, I began modeling and working towards classifying the primary causes of accidents. This was a multi-class problem. I attempt to simplify this issue in the [Creating_Crash_Master](.\Data_exploration\Creating_Crash_Master.ipynb) notebook by grouping similar causes into larger categories for classification. 
 
-![classification bins](.\images\Annotation2020-07-20_085925.png)
+![classification bins](./images/Annotation2020-07-20_085925.png)
 
 This effectively took our number of classes down from 40 to 6. However, this also created and emphasized a class imbalance problem that would prove difficult to overcome. Given more time, this was something I wanted to try and break up further and import more unique features from missing datasets. 
 
 Due to the class imbalance problem, we had 90% of data accounting for the Driver Error class while the other 5 classes made up the remaining 10%. My first model would be a binary classifier to see if we could easily identify something as being Driver Error or not (granted, Driver Error is a broad category and I still feel my grouping of the class leaves much to be desired). This model would give me high accuracy at identifying Driver Error, but would be a very biased model with a very high rate of False Positive identification. 
 
-![binary confusion matrix](.\images\Test.png)
+![binary confusion matrix](./images/Test.png)
 
 After creating the initial binary model, I then created a multi-class model to try and identify the remaining the classes from the data. My model seemed to work well when identifying if something was weather related, but the other classes were not much better than random chance.
 
-![sub-class model](.\images\sub-class.png)
+![sub-class model](./images/sub-class.png)
 
 </details>
 
