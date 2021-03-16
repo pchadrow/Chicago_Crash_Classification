@@ -29,6 +29,7 @@ During initial overview of data, it was easy to determine that I had more data t
 
 ## Analysis
 <details><summary></summary>
+
 An initial [overview](./Data_exploration/Data_import_overview.ipynb) provided an excellent [profile report](./Data_exploration/Profile_Reports/crash_data.html) of the data. From there it was easy to identify the columns that needed work before exploration could begin. The notebooks within the Data_exploration folder show the cleaning process and an [attempt at filling some missing data](./Data_exploration/Attempt_at_filling_missing_lane_info.ipynb). Due to time constraints and a poor initial model, this idea was dismissed. However, I would like to return to this attempt and try semi-supervised learning to determine the missing values. 
 
 ____________________________________
